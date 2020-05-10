@@ -26,6 +26,7 @@ class ListCharacterAdapter (private val listCharacter : ArrayList<Character>)  :
         holder.tvDetail.text = character.detail
         holder.itemView.setOnClickListener {
             val intent = Intent(holder.itemView.context, DetailActivity::class.java)
+            intent.putExtra("character",listCharacter[position])
             holder.itemView.context.startActivity(intent)
         }
     }
