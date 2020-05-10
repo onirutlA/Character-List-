@@ -13,8 +13,8 @@ class About : AppCompatActivity() {
         setContentView(R.layout.activity_about)
         actionBar?.setDisplayHomeAsUpEnabled(true)
 
-        val instagram = findViewById<ImageView>(R.id.instagram_profile)
-        val linkedin = findViewById<ImageView>(R.id.linkedin_profile)
+        val instagram : ImageView = findViewById(R.id.instagram_profile)
+        val linkedin : ImageView = findViewById(R.id.linkedin_profile)
         instagram.setOnClickListener{
             val uriForApp : Uri = Uri.parse("https://www.instagram.com/_u/onirutla/")
             val intent = Intent(Intent.ACTION_VIEW ,uriForApp)
