@@ -4,18 +4,18 @@ object CharacterData {
     private val characterName = arrayOf(
         "The Boss",
         "Big Boss",
-        "Shalashaska Revolver Ocelot",
+        "Ocelot",
         "Kazuhira Miller",
         "Solid Snake",
         "Quiet",
         "Skull Face",
-        "Paz Ortega Andrade",
+        "Paz",
         "Chico",
         "Huey Emmerich"
     )
     private val characterDetail = arrayOf(
-        "The Boss, also known as The Joy, The Mother of Special Forces, Mercury Lady and Voyevoda (Russian: Воевода, \"Warlord\"), was a renowned American soldier, founder and leader of the Cobra Unit, the biological mother of Ocelot, and mentor and mother figure to Naked Snake. In June 1944, during World War II, she led the Cobra Unit to victory at the Battle of Normandy. Together with Naked Snake, she developed the technique of CQC.",
-        "Big Boss, real name John, also known as Jack, and formerly known as Naked Snake, Vic Boss,[4][5][6] Ishmael, Saladin, or simply Snake, was a renowned special forces operative and mercenary commander. He founded U.S. Army Special Forces Unit FOXHOUND, along with the mercenary company Militaires Sans Frontières, and was one of the founding members of the Patriots. Big Boss later established the military states of Outer Heaven and Zanzibar Land as bases for his companies, in order to realize his ambitions of creating a nation for soldiers. Considered by some as \"The Greatest Warrior of the 20th Century,\" he earned such monikers as \"the Legendary Soldier\" and \"the Legendary Mercenary,\" feared in combat by both friend and foe as a hero and a madman.",
+        "The Boss, also known as The Joy, The Mother of Special Forces, Mercury Lady and Voyevoda (Russian: Воевода, \"Warlord\"), was a renowned American soldier, founder and leader of the Cobra Unit, the biological mother of Ocelot, and mentor and mother figure to Naked Snake. In June 1944, during World War II, she led the Cobra Unit to victory at the Battle of Normandy. Together with Naked Snake, she developed the technique of CQC",
+        "Big Boss, real name John, also known as Jack, and formerly known as Naked Snake, Vic Boss, Ishmael, Saladin, or simply Snake, was a renowned special forces operative and mercenary commander. He founded U.S. Army Special Forces Unit FOXHOUND, along with the mercenary company Militaires Sans Frontières, and was one of the founding members of the Patriots. Big Boss later established the military states of Outer Heaven and Zanzibar Land as bases for his companies, in order to realize his ambitions of creating a nation for soldiers. Considered by some as \"The Greatest Warrior of the 20th Century,\" he earned such monikers as \"the Legendary Soldier\" and \"the Legendary Mercenary,\" feared in combat by both friend and foe as a hero and a madman.",
         "Revolver Ocelot, real name Adamska (Russian: Адамска) or simply Adam (Russian: Адам), and also known as ADAM, Shalashaska (Russian: Шалашаска), or most commonly Ocelot (Russian: Оцелот), was a Russian-American operative of FOXHOUND and an agent of the Patriots. A master of interrogation and a formidable gunfighter, he was often referred to as a \"ricochet genius\" in regards to his gun fighting skills. A fanatic, he was known for his affinity towards Spaghetti Westerns, as evidenced by his choice of weapon and his clothing, duster and spurs, the traditional garb of cowboys. His weapon of choice was the Colt Single Action Army Revolver, which he regarded as \"the greatest handgun ever made.\" Throughout his career, Ocelot became personally acquainted with all five men codenamed Snake: a friendly rival to Big Boss (aka Naked Snake), the right hand man for Liquid Snake and Solidus Snake, one of Venom Snake's top advisers, and a nemesis to Solid Snake. He was the son of The Sorrow, and the legendary soldier The Boss, given birth to on the battlefield. Specializing in infiltration of a different nature than Solid Snake and Big Boss, Ocelot often acted as a triple agent, to serve multiple interests in the same situation.\n",
         "Kazuhira Miller (カズヒラ・ミラー Kazuhira Mirā?), also known as McDonell Benedict Miller and Master Miller, was the subcommander of both the Militaires Sans Frontières and Diamond Dogs, and later, the survival trainer of FOXHOUND. He was well-read and possessed a vast array of scientific knowledge.",
         "Solid Snake, real name David, also known as Old Snake, and briefly known as Iroquois Pliskin, or simply Snake, was a former spy, special operations soldier, and mercenary. Possessing an IQ of 180 and fluent in six languages, he was known as \"the Man Who Makes the Impossible Possible\" and his exploits made him into a living legend among the military black ops. A product of the Les Enfants Terribles project, Snake was a clone of world renowned soldier Big Boss, along with his brothers Liquid Snake and Solidus Snake. Initially a Green Beret, Snake was later inducted into High-Tech Special Forces Unit FOXHOUND in the mid 1990s while it was commanded by Big Boss. Repeatedly tasked with disarming and destroying the latest incarnation of Metal Gear, a bipedal nuclear weapon-armed tank, Snake would thrice avert potential nuclear catastrophe, becoming a famed war hero.",
@@ -37,6 +37,9 @@ object CharacterData {
         R.drawable.chico,
         R.drawable.huey
     )
+    private val characterBiography = arrayOf(
+        ""
+    )
     val listCharacterData : ArrayList<Character>
     get(){
         val list = arrayListOf<Character>()
@@ -45,6 +48,7 @@ object CharacterData {
             character.name = characterName[position]
             character.detail = characterDetail[position]
             character.image = characterImage[position]
+
             list.add(character)
         }
         return list
