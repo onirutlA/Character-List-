@@ -12,10 +12,10 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_detail)
 
         val character = intent.getParcelableExtra<Character>("character")
-        val tvNameDetail : TextView = findViewById(R.id.name_character_detail)
-        val tvCharacterDetail : TextView = findViewById(R.id.description_character_detail)
-        val tvBiography : TextView = findViewById(R.id.biography_character_detail)
-        val ivCharacter : ImageView = findViewById(R.id.photo_character_detail)
+        val tvNameDetail : TextView = findViewById(R.id.detail_character_name)
+        val tvCharacterDetail : TextView = findViewById(R.id.detail_character)
+        val tvBiography : TextView = findViewById(R.id.detail_biography)
+        val ivCharacter : ImageView = findViewById(R.id.detail_character_image)
 
         tvNameDetail.text = character!!.name
         tvCharacterDetail.text = character.detail
