@@ -4,12 +4,12 @@ object CharacterData {
     private val characterName = arrayOf(
         "The Boss",
         "Big Boss",
-        "Ocelot",
+        "Revolver Ocelot",
         "Kazuhira Miller",
         "Solid Snake",
         "Quiet",
         "Skull Face",
-        "Paz",
+        "Paz Ortega Andrade",
         "Chico",
         "Huey Emmerich"
     )

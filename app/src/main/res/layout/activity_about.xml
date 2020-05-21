@@ -14,7 +14,7 @@
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_gravity="center"
-        tools:src="@drawable/photo_profil"
+        android:src="@drawable/photo_profil"
         />
     <TextView
         android:layout_width="match_parent"
