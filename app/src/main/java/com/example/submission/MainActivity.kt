@@ -29,15 +29,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
+        return when (item.itemId) {
             R.id.action_about -> {
                 val intentAbout = Intent(this@MainActivity, About::class.java)
                 startActivity(intentAbout)
-                return true
+                true
             }
             else -> {
                 super.onOptionsItemSelected(item)
-                return false
+                false
             }
         }
     }
@@ -48,5 +48,3 @@ class MainActivity : AppCompatActivity() {
         lvCharacter.adapter = listCharacterAdapter
     }
 }
-
-
