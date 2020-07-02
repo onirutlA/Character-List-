@@ -11,5 +11,4 @@
         android:icon="@drawable/ic_person_black_24dp"
         app:showAsAction="always"
         />
-
 </menu>
